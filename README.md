@@ -23,7 +23,7 @@ O desenvolvimento deste projeto foi crucial para praticar:
 ✔️ JavaScript
 
   ## 🔗 Deploy
-  Você pode ver a versão online do projeto aqui:
+  Você pode ver a versão online do projeto aqui: https://perifa-sustentavel.vercel.app/
 
   ## 🤝 Contato
   Se você tiver alguma dúvida ou sugestão:
