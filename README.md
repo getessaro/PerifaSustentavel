@@ -6,6 +6,7 @@ Este é um projeto de aprendizado desenvolvido por mim como parte do bootcamp Fr
 O objetivo principal foi recriar a interface do site **Instituto Perifa Sustentável** (IPS) para aplicar e consolidar os conhecimentos adquiridos em **HTML5, CSS3, JavaScipt e responsividade**.
 
 **Nota:** Este projeto é um clone/recriação de aprendizado e não é o site oficial do Instituto Perifa Sustentável. Para conhecer o trabalho real, visite: https://institutoperifasustentavel.com.br/
+![perifaPrint](https://github.com/user-attachments/assets/e13d39f1-cdfe-4de3-9fd3-dde35951826a)
 
 🌟 **O que aprendi e pratiquei** <br>
 
