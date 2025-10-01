@@ -18,9 +18,9 @@ O desenvolvimento deste projeto foi crucial para praticar:
 
 ### Tecnologias Utilizadas 
 
-* HTML5 
-* CSS3 
-* JavaScript
+✔️ HTML5 <br>
+✔️ CSS3 <br>
+✔️ JavaScript
 
   ## 🔗 Deploy
   Você pode ver a versão online do projeto aqui:
