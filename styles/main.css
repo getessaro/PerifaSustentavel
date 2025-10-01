@@ -1,0 +1,253 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8F0; /* Tom de verde pastel bem claro (Honeydew) */
+    color: #333; /* Cor de texto padrão para melhor legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+}
+
+/* --- Cabeçalho e Navegação --- */
+header {
+    background-color: #ed7207;
+    color: #ffffff;
+    padding: 1rem 5%; /* Usa porcentagem para ser mais responsivo */
+    display: flex;
+    justify-content: space-between; /* Alinha o título à esquerda e a navegação à direita */
+    align-items: center;
+    border-bottom: 1px solid #ffffff; /* Linha sutil para separar do conteúdo */
+
+    /* Efeito para o cabeçalho ficar fixo no topo */
+    position: sticky;
+    top: 0;
+    width: 90%; /* Ajusta a largura por causa do padding */
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); /* Forma de banner com corte em V */
+}
+
+/* Container da logo e do texto */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a logo e o texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo para a logo no cabeçalho */
+.logo {
+    height: 60px; /* Aumentei um pouco a altura, ajuste se precisar */
+    width: 60px;  /* Defini a mesma largura para formar um quadrado de base */
+    border-radius: 50%; /* Isso transforma o elemento em um círculo perfeito */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7); /* Adiciona um brilho branco ao redor da logo */
+}
+
+/* Estilo para o texto ao lado da logo */
+.logo-text {
+    color: #ffffff; /* Tom de marrom mais escuro e rico */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Coloca os itens do menu em linha */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff; /* Corrigido para branco para ser legível no fundo preto */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um fundo sutil ao passar o mouse */
+    color: #ffffff; /* Mantém o texto branco para melhor contraste */
+}
+
+/* --- Estilos Gerais e Seções --- */
+main {
+    padding: 2rem 5%; /* Adiciona espaçamento lateral e vertical ao conteúdo principal */
+}
+
+section {
+    padding: 60px 0; /* Espaçamento vertical entre as seções */
+    border-bottom: 1px solid #eee; /* Linha separadora entre seções */
+}
+
+/* --- Estilos para a seção de introdução (#inicio) --- */
+section#inicio {
+    /* Adiciona a imagem de fundo com um filtro escuro por cima para legibilidade */
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../assets/grupoPerifa.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    color: #ffffff;
+    text-shadow: #000; /* Muda a cor do texto para um branco suave (cinza bem claro) para melhor conforto visual */
+    text-align: center; /* Centraliza todo o conteúdo da seção */
+    padding: 80px 5%; /* Aumenta o espaçamento interno para dar mais destaque */
+    min-height: 70vh; /* Garante uma altura mínima para a seção, mostrando mais da imagem de fundo */
+    display: flex; /* Habilita o flexbox */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+section#inicio p {
+    max-width: 800px; /* Limita a largura do parágrafo para melhor leitura */
+    margin-left: auto; /* Centraliza o parágrafo */
+    margin-right: auto; /* Centraliza o parágrafo */
+}
+
+/* Estilo para o título da seção "Sobre" */
+section#sobre h2 {
+    color: #E67E22; /* Um tom de laranja vibrante */
+}
+
+section#inicio h1 {
+    color: #F39C12; /* Um tom de laranja mais claro e vibrante para maior destaque */
+}
+
+/* Botão de Call-to-Action (CTA) na seção "Sobre" */
+.cta-btn {
+    display: inline-block;
+    background-color: #2E8B57; /* Um tom de verde sustentável */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px; /* Cantos bem arredondados para um look moderno */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #256d45; /* Tom de verde mais escuro */
+    transform: translateY(-3px); /* Leve efeito de "levantar" */
+}
+
+/* --- Seção de Projetos --- */
+#nossos-projetos {
+    background-color: #f9f9f9; /* Fundo suave para destacar a seção */
+    text-align: center;
+    padding: 60px 20px; /* Adiciona espaçamento interno vertical e horizontal */
+}
+
+.project-feature {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    margin-top: 40px;
+    text-align: left;
+}
+
+.project-image {
+    flex: 1; /* Faz a imagem ocupar metade do espaço disponível */
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.project-description {
+    flex: 1; /* Faz o texto ocupar a outra metade */
+}
+
+/* Estilo para os títulos dos projetos individuais */
+.project-description h3 {
+    color: #E67E22; /* Laranja para os títulos dos projetos */
+}
+
+/* --- Media Query para Responsividade --- */
+@media (max-width: 768px) {
+    .project-feature {
+        flex-direction: column; /* Em telas menores, a imagem fica em cima do texto */
+    }
+
+    /* Garante que a ordem (texto, depois imagem) seja mantida no mobile */
+    .project-feature:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+/* --- Seção de Apoio/Doação --- */
+#apoie-nos {
+    background-color: #D2B48C; /* Tom de marrom terra claro */
+    text-align: center; /* Centraliza o título da seção */
+}
+
+.support-main-image {
+    margin-top: 40px; /* Espaço abaixo do título */
+    text-align: center; /* Garante que a imagem fique centralizada */
+}
+
+.support-main-image img {
+    max-width: 80%; /* A imagem ocupará no máximo 80% da largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados para combinar com o design */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os cartões */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Permite que os cartões quebrem a linha em telas menores */
+}
+
+.donation-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.donation-card h3 {
+    margin-top: 0;
+    color: #000;
+}
+
+.donation-btn {
+    display: inline-block;
+    background-color: #2E8B57; /* Verde sustentável, para consistência */
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px; /* Espaço entre o texto e o botão */
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.donation-btn:hover {
+    background-color: #256d45; /* Tom de verde mais escuro no hover */
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 2rem 0;
+    margin-top: 40px; /* Adiciona um espaço acima do rodapé */
+    background-color: #E67E22; /* Tom de laranja mais escuro, alinhado com os títulos das seções */
+    color: #ffffff; /* Cor de texto branca para boa legibilidade */
+}
